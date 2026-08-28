@@ -151,6 +151,11 @@ img { max-width: 100%; display: block; }
 .spec-card.fisio .ico { background: #eaf1fe; }
 .spec-card.odonto .ico { background: #e6f7fa; }
 .spec-card.psico .ico { background: #f2ecfd; }
+.spec-card { padding: 0; gap: 0; overflow: hidden; }
+.spec-card-photo { aspect-ratio: 4/3; overflow: hidden; }
+.spec-card-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.spec-card:hover .spec-card-photo img { transform: scale(1.06); }
+.spec-card-body { padding: 1.5rem 1.6rem 1.7rem; display: flex; flex-direction: column; gap: 0.7rem; flex-grow: 1; }
 .spec-card h3 { font-size: 1.2rem; }
 .spec-card p { font-size: 0.9rem; color: var(--ink-suave); margin: 0; flex-grow: 1; }
 .spec-card .go { font-size: 0.85rem; font-weight: 800; display: flex; align-items: center; gap: 0.3rem; }
@@ -174,6 +179,13 @@ img { max-width: 100%; display: block; }
 .card .ico { font-size: 1.9rem; width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center; background: var(--accent-bg); border-radius: 0.8rem; }
 .card h3 { font-size: 1.02rem; font-family: "Inter", sans-serif; font-weight: 800; }
 .card .desc { font-size: 0.87rem; color: var(--ink-suave); flex-grow: 1; }
+
+/* Tratamientos con foto */
+.card.treatment { padding: 0; gap: 0; overflow: hidden; }
+.card.treatment .card-photo { aspect-ratio: 4/3; overflow: hidden; }
+.card.treatment .card-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+.card.treatment:hover .card-photo img { transform: scale(1.06); }
+.card.treatment .card-body { padding: 1.2rem 1.3rem 1.4rem; display: flex; flex-direction: column; gap: 0.55rem; flex-grow: 1; }
 
 /* Profesionales */
 .pro-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr)); gap: 1.3rem; }
